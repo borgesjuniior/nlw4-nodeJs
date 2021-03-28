@@ -4,5 +4,9 @@
   "port": 5432,
   "username": "postgres",
   "password": "docker",
-  "database": "nlw"
+  "database": "postgres",
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+      "migrationsDir": "./src/database/migrations/"
+  }
 }
