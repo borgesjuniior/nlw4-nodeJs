@@ -11,7 +11,7 @@ export default {
   bail: true,
 
   // The directory where Jest should store its cached dependency information
-  // cacheDirectory: "C:\\Users\\Júnior\\AppData\\Local\\Temp\\jest",
+  // cacheDirectory: "C:\\Users\\Gusta\\AppData\\Local\\Temp\\jest",
 
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
@@ -19,8 +19,7 @@ export default {
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
-  // An array of glob patterns indicating a set of files for which coverage
-  // information should be collected
+  // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
@@ -138,7 +137,7 @@ export default {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: 'node',
+  // testEnvironment: "node",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -147,10 +146,11 @@ export default {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: ['**/__test__/*.test.ts'],
+  testMatch: [
+    '**/__tests__/*.test.ts',
+  ],
 
-  // An array of regexp pattern strings that are matched against all test paths,
-  // atched tests are skipped
+  // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
   //   "\\\\node_modules\\\\"
   // ],
