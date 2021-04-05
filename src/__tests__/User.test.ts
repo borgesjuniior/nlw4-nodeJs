@@ -31,6 +31,6 @@ describe('Users', () => {
       name: 'User Example',
     });
 
-    expect(response.status).toBe(400);
+    expect(response.status).toBe(409);
   });
 });

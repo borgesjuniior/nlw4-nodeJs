@@ -2,6 +2,8 @@ import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class CreateUsersTable1616900752664 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"'); // Habilita a extensão para gerar o id automático no postgres
+
     await queryRunner.createTable(new Table(
       {
         name: 'users',
