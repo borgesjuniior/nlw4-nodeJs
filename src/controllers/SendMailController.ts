@@ -23,6 +23,16 @@ class SendMailController {
     if (!surveyExists) {
       return res.status(404).json({ message: 'Survey does not exists!' });
     }
+
+    // Salvar as informações no banco de dados
+    const surveyUser = surveyUserRepository.create({
+      user_id: userExists.id,
+      survey_id,
+    });
+
+    await surveyUserRepository.save(surveyUser);
+
+    return res.json(surveyUser);
   }
 }
 
